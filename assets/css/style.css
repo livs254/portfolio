@@ -1,0 +1,458 @@
+:root {
+  --text-color: #11a372;
+  --link-color: #4a76ee;
+  --background-color: emerald;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  max-width: fit-content;
+  margin: 0 auto;
+}
+a {
+  color: var(var(--link-color));
+  text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-top: 25px;
+  height: 80px;
+}
+nav .left a span {
+  color: var(--text-color);
+  font-size: 25px;
+  font-weight: 600;
+}
+nav .right {
+  margin-top: 8px;
+}
+nav .right a {
+  color: var(--text-color);
+  margin: 0px 10px;
+  font-size: 16px;
+}
+nav a:hover {
+  color: black;
+}
+nav .right a:last-child {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+nav .right a span {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+/*SECTION 1: HERO*/
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin: 20px 0;
+  align-items: center;
+  margin-bottom: 10px;
+  grid-area: 40px;
+}
+.hero-section .text {
+  font-size: 16px;
+}
+.hero-section .text h2 {
+  float: 5;
+}
+.hero-section .text p {
+  font-size: 25px;
+}
+.hero-section .text .links {
+  margin-top: 20px;
+}
+.hero-section .text .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: 0.1s;
+  color: #11a372;
+}
+.hero-section .text .links a:hover {
+  color: var(--text-color);
+  border: black;
+}
+.hero-section .headshot {
+  float: 2;
+  display: flex;
+  justify-content: right;
+}
+.hero-section .headshot img {
+  border-radius: 50%;
+  width: 350px;
+}
+
+/*SKILL SECTION STYLING*/
+.skills-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.skills-section h2 {
+  font-size: 35px;
+  color: #11a372;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 5px;
+}
+.skills-section .text {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.skills-section .cells {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: fit-content;
+  flex-wrap: wrap;
+}
+#skills .cells h3{
+  color:#11a372;
+}
+#skill {
+  justify-content: center;
+  align-items: center;
+}
+.skills-section .cells .cell {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+}
+.skills-section .cells .cell img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+.skills-section .cells .cell span {
+  font-size: 18px;
+}
+/*SETION 3*/
+.blog-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.blog-section h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.blog-section .group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.blog-section .group .person-details {
+  text-align: center;
+  flex: 2;
+}
+.blog-section .group .text {
+  flex: 8;
+}
+.blog-section .group .person-details img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.blog-section .group .person-details p {
+  font-weight: 600;
+}
+.blog-section .group .person-details p:last-child {
+  font-weight: normal;
+}
+
+/* SECTION 4: CONTACT*/
+.form-section {
+  background-color: white;
+  padding: 0px 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.inner-width {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+}
+.form-section h1 {
+  font-size: 20px;
+  color:#11a372;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+.name,
+.email,
+.message {
+  background: none;
+  border: none;
+  border-bottom: 1px solid;
+  color: #11a372;
+  padding: 10px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.name {
+  float: left;
+  width: 270px;
+}
+.email {
+  float: right;
+  width: 270px;
+}
+.message {
+  min-width: 100%;
+  max-width: 100%;
+}
+.form-section button {
+  background: none;
+  color: #11a372;
+  border: 1px solid #11a372;
+  padding: 12px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+.form-section button:hover {
+  background-color: #70a1ff;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .name,
+  .email {
+    width: 100px;
+  }
+}
+
+/****GALLERY (BLOG0*****/
+.gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  /* four per row with gap accounted */
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  max-width: 200px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.gallery-item p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/*****EDUCATION EXPERIENCE STARTS HERE******/
+.eduction-experience {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.eduction-experience-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.eduction-experience .title h2 {
+  font-family: "Poppins";
+  color: #11a372;
+  padding: 0 0 20px 30px;
+}
+.eduction-experience .eduction-experience-contents {
+  padding: 0 30px;
+  border-left: 2px solid #bababa;
+}
+.eduction-experience .eduction-experience-contents .eduction-experience-box {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+}
+.eduction-experience
+  .eduction-experience-contents
+  .eduction-experience-box:hover {
+  box-shadow: 0 3px 12px 0 #ccc;
+  border: 1px solid transparent;
+}
+.eduction-experience
+  .eduction-experience-contents
+  .eduction-experience-box::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: #11a372;
+  border: 2px solid white;
+}
+.eduction-experience-box h4 {
+  position: relative;
+  color: #11a372;
+}
+.eduction-experience-box h3 {
+  font-size: 19px;
+  padding: 10px 0px 6px;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+}
+.eduction-experience-box p {
+  line-height: 1.2;
+  color: #666;
+  font-size: 16px;
+}
+/**EDUCATION EXPERIENCE STYLING ENDS HERE**/
+
+@media (max-width: 900px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-item {
+    flex: 1 1 100%;
+  }
+}
+/****GALLERY ENDS HERE******/
+
+@media (max-width: 800px) {
+  /*SECTION 1*/
+  .hero-section .text h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 740px) {
+  /*SECTION 1*/
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .hero-section .headshot img {
+    width: 300px;
+  }
+  /*SECTION 3*/
+  .blog-section h2 {
+    text-align: center;
+  }
+  .blog-section .group {
+    flex-direction: column;
+  }
+  /*SEcTION 4*/
+  .contact-section .group {
+    flex-direction: column;
+  }
+  /*With in section 2*/
+  .in_skills {
+    flex-direction: column;
+  }
+  .in_skills .image_skills img {
+    width: 200px;
+    height: auto;
+  }
+
+  /****EDUCATION EXPERIENCE ******/
+  .eduction-experience-row {
+    grid-template-columns: 1fr;
+  }
+  .eduction-experience-row .eduction-experience:nth-child(2) {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 600px) {
+  /*nav*/
+  nav {
+    padding: 0 20px;
+  }
+  nav .right a {
+    font-size: 22px;
+  }
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 0 50px;
+  }
+  nav .right a span {
+    display: none;
+  }
+  /* SECTION 1*/
+  .hero-section {
+    padding: 0 20px;
+  }
+  .hero-section .text h2 {
+    font-size: 30px;
+  }
+  /*SECTION 2: SKILLS*/
+  .skills-section {
+    padding: 0 20px;
+  }
+  .skills-section .cells .cell span {
+    font-size: 16px;
+  }
+  /*With in section 2*/
+  .in_skills {
+    padding: 0 20px;
+  }
+
+  /*SEcTION 3*/
+  .blog-section {
+    padding: 0 20px;
+  }
+  /*SEcTION 4*/
+  .contact-section {
+    padding: 0 20px;
+  }
+}
